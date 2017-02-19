@@ -1,0 +1,1380 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>GameHaven</title>
+	<link type="text/css" rel="stylesheet" href="style.css"></link>
+	<link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
+	<script src="jquery-2.1.3.min.js"></script>
+	<meta name="viewport" content="width=device-width,initial-scale=1">
+</head>
+    <body>
+        
+        <div class="wrapper">
+			<div class="nav">
+				<div class="nav-menu">
+					<div id="logo"><a href="index.html"><img src="images/logo.png"></a></div>
+						<ul class="menu">
+							<li><a href="#">Home</a></li>
+							<li><a class="menu-toggles" id="games-toggle" href="#">Games</a></li>
+								<div class="submenu" id="search-list">
+									<input id="s" type="text" placeholder="Search games..." /> 
+									<ul class="s-games">
+    									<li><a class="showpopup" data-showpopup="1" href="#1">Assasins Creed Unity</a></li>
+    									<li><a class="showpopup" data-showpopup="2" href="#2">Alien Isolation</a></li>
+    									<li><a class="showpopup" data-showpopup="3">Starcraft: Legacy of the Void</a></li>
+										<li><a class="showpopup" data-showpopup="4">Tomb Raider</a></li>
+										<li><a class="showpopup" data-showpopup="5">PES 2014</a></li>
+										<li><a class="showpopup" data-showpopup="6">Watch Dogs</a></li>
+										<li><a class="showpopup" data-showpopup="7">Splinter Cell: Conviction</a></li>
+										<li><a class="showpopup" data-showpopup="8">Hitman Absolution</a></li>
+										<li><a class="showpopup" data-showpopup="9">Middle-Earth: Shadow Of Mordor</a></li>
+										<li><a class="showpopup" data-showpopup="10">Dishonored</a></li>
+										<li><a class="showpopup" data-showpopup="11">Mass Effect</a></li>
+										<li><a class="showpopup" data-showpopup="12">Mortal Kombat X</a></li>
+										<li><a class="showpopup" data-showpopup="13">Injustice: Gods Among Us</a></li>
+										<li><a class="showpopup" data-showpopup="14">Marvel Vs Capcom 3</a></li>
+										<li><a class="showpopup" data-showpopup="15">Batman:Arkham City</a></li>
+										<li><a class="showpopup" data-showpopup="16">Batman:Arkham Asylum</a></li>
+										<li><a class="showpopup" data-showpopup="17">The Order 1886</a></li>
+										<li><a class="showpopup" data-showpopup="18">Until Dawn</a></li>
+										<li><a class="showpopup" data-showpopup="19">Battlefield Hardline</a></li>
+										<li><a class="showpopup" data-showpopup="20">Uncharted 4</a></li>
+										<li><a class="showpopup" data-showpopup="21">The Witcher: Wild Hunt</a></li>
+										<li><a class="showpopup" data-showpopup="22">Metal Gear Solid 5: The Phantom Pain</a></li>
+										<li><a class="showpopup" data-showpopup="23">Neverwinter</a></li>
+										<li><a class="showpopup" data-showpopup="24">Rainbow 6 Siege</a></li>
+										<li><a class="showpopup" data-showpopup="25">No Man's Sky</a></li>
+										<li><a class="showpopup" data-showpopup="26">Bloodborne</a></li>
+										<li><a class="showpopup" data-showpopup="27">Rise Of The Tomb Raider</a></li>
+										<li><a class="showpopup" data-showpopup="28">Deus Ex Human Revolution</a></li>
+										<li><a class="showpopup" data-showpopup="29">Batman: Arkham Origins</a></li>
+										<li><a class="showpopup" data-showpopup="30">The Elder Scrolls Online</a></li>
+										<li><a class="showpopup" data-showpopup="31">Mass Effect 2</a></li>
+										<li><a class="showpopup" data-showpopup="32">Mass Effect 3</a></li>
+										<li><a class="showpopup" data-showpopup="33">NBA 2K15</a></li>
+									</ul>
+								</div>
+							<li><a class="menu-toggles" id="comingSoon-toggle" href="#">Coming Soon</a></li>
+							<div class="submenu" id="comingSoon-submenu">
+								<div id="comingSoon-container">
+									<div class="comingSoon-items"><img src="images/re2revelations.jpg">Resident Evil</div>
+									<div class="comingSoon-items"><img src="images/dmc.jpg">DmC: Definitive Edition</div>
+									<div class="comingSoon-items"><img src="images/swBattlefront.jpg">Star Wars: Battlefront</div>
+								</div>
+							</div>
+						</ul>
+
+						<div class="cart">
+							<img class="basket" src="images/shoppingCart2.png">
+							<span id="count"></span>
+							<div class="cart-details">
+								<div id="cart-items">
+									<table id="table">		
+      									<tr>    
+       										<th width="70%">Your Order</th>
+       								 		<th width="30%">Price</th>
+       								 		<th></th>
+			  					  		</tr>
+									</table>
+								</div>
+								<div id="total">No Items</div>
+							</div>
+						</div>
+				</div>	
+			</div>
+
+			<div class="slider">
+					<div class="slide active-slide" id="slider-content1">
+						<div class="content-right">
+							<img src="images/alien.jpg">
+						</div>
+						<div class ="content-left">
+							<h1>Alien: Isolation</h1>
+							<h2>An Eternal Terror</h2>
+							<p>Fifteen years after the events of Alien, Ellen Ripley's daughter, Amanda enters a desperate battle for survival, on a mission to unravel the truth behind her mother's disappearance. As Amanda, you will navigate through an increasingly volatile world as you find yourself confronted on all sides by a panicked, desperate population and an unpredictable, ruthless Alien. Underpowered and underprepared, you must scavenge resources, improvise solutions and use your wits, not just to succeed in your mission, but to simply stay alive.</p>
+						</div>
+					</div>
+				
+				
+					<div class="slide" id="slider-content2">
+						<div class="content-right">
+							<img src="images/batman.jpeg">
+						</div>
+						<div class="content-left">
+							<h1>Batman:Arkham Knight</h1>
+							<h2>Who is the Arkham Knight?</h2>
+							<p>In the explosive finale to the Arkham series, Batman faces the ultimate threat against the city he is sworn to protect. The Scarecrow returns to unite an impressive roster of super villains, including Penguin, Two-Face and Harley Quinn, to destroy The Dark Knight forever</p>
+						</div>
+					</div>
+				
+				
+				
+					<div class="slide" id="slider-content3">
+						<div class="content-right">
+							<img src="images/division.jpg">
+						</div>
+						<div class="content-left">
+							<h1>Tom Clancy's The Division</h1>
+							<h2>Post-pandemic New York</h2>
+							<p>The Division takes place in New York three weeks after a lethal virus, released on Black Friday, has swept through the city. One by one, basic services have failed. Society has collapsed into chaos. The President invokes Presidential Directive 51, and The Division, a top-secret unit of self-supporting tactical agents, is activated. Leading seemingly ordinary lives, Division agents are trained to operate independently of command in this type of emergency situation. When the lights go out, their mission begins.</p>
+						</div>
+					</div> 
+        
+        
+       				 <div class="slide" id="slider-content4">
+						<div class="content-right">
+							<img src="images/ran.jpg">
+						</div>
+						<div class="content-left">
+							<h1>Eve: Valkyrie</h1>
+							<h2>The rise of the Valkyrie</h2>
+							<p>With EVE Valkyrie you are launched from a carrier into a hectic dogfight with 11 other drones and forced navigate a treacherous battlefield on an epic scale. Made playable for the first time at Fanfest 2013, EVE-VR was created by a small team of CCP developers who used their spare time to create a working multiplayer prototype using the Oculus Rift headset. Built from the ground up for virtual reality and based in the EVE universe, this game tells the story of New Eden from a new perspective.</p>
+						</div>
+					</div> 
+        
+        			<div class="slide" id="slider-content5">
+						<div class="content-right">
+							<img src="images/quantum-break.jpg">
+						</div>
+						<div class="content-left">
+							<h1>Quantum Break</h1>
+							<h2>Fractured time...</h2>
+							<p>Quantum Break is set at and around the fictional North Eastern U.S. Riverport University where a time travel experiment has gone wrong. The event not only causes time to start breaking down, but also grants the three main characters Jack Joyce, Beth Wilder, and Paul Serene the ability to manipulate time. For example, Serene, the main antagonist, can see into the future to decide which choices to make in the present while Joyce, one of the two protagonists, can stop time. The two are pursued by Monarch Solutions, a corporation founded by Serene.</p>
+						</div>
+					</div> 
+				
+				
+			</div>	
+								
+				<div class="slider-nav">
+					<a href="#" class="arrow-prev"><img src="images/arrow-prev.png"></a>
+					<ul class="slider-dots">
+						<li class="dot active-dot" id="b1">&bull;</li>
+						<li class="dot" id="b2">&bull;</li>
+						<li class="dot" id="b3">&bull;</li>
+             			<li class="dot" id="b4">&bull;</li>
+           				<li class="dot" id="b5">&bull;</li>
+					</ul>
+					<a href="#" class="arrow-next"><img src="images/arrow-next.png"></a>
+				</div>
+				
+				
+			<div id="filter-container">								
+
+
+				<div id="filters">
+					<h2>Filter By</h2>
+
+					<div class="category-filters" id="reset"><img src="images/reset.png"><span style="font-size:18px"> Reset all</span></div>
+
+					<div class="category-filters">
+						<div  id="category"><img src="images/close_round.png" id="genre" class="col"/> <span style="font-size:18px">Category</span></div>
+						<div id="genre-filters">
+							<ul class="filter-options">
+  								<li><label><input type="checkbox" value="filter_action" data-filter_id="action"> Action</label></li>
+  								<li><label><input type="checkbox" value="filter_adventure" data-filter_id="adventure"> Adventure</label></li>
+  								<li><label><input type="checkbox" value="filter_fps" data-filter_id="fps"> FPS</label></li>
+  								<li><label><input type="checkbox" value="filter_rpg" data-filter_id="rpg"> RPG</label></li>
+  								<li><label><input type="checkbox" value="filter_rts" data-filter_id="rts"> RTS</label></li>
+  								<li><label><input type="checkbox" value="filter_survival" data-filter_id="survival"> Survival</label></li>
+  								<li><label><input type="checkbox" value="filter_sports" data-filter_id="sports"> Sports</label></li>
+							</ul>
+						</div> 
+					</div>
+
+
+					<div class="category-filters">
+						<div id="platform"><img src="images/close_round.png" id="systems" class="col"/><span style="font-size:18px"> Platform</span></div>
+						<div id="platform-filters">
+							<ul class="filter-options">
+  								<li><label><input type="checkbox" value="filter_pc" data-filter_id="pc"> PC</label></li>
+  								<li><label><input type="checkbox" value="filter_ps4" data-filter_id="ps4"> PS4</label></li>
+  								<li><label><input type="checkbox" value="filter_xone" data-filter_id="xone"> Xbox One</label></li>
+  								<li><label><input type="checkbox" value="filter_ps3" data-filter_id="ps3"> PS3</label></li>
+  								<li><label><input type="checkbox" value="filter_x360" data-filter_id="x360"> Xbox 360</label></li>
+							</ul>
+						</div> 
+					</div>
+
+
+					<div class="category-filters">
+						<div id="publisher"><img src="images/close_round.png" id="publish" class="col"/><span style="font-size:18px"> Publisher</span></div>
+						<div id="publisher-filters">
+							<ul class="filter-options">
+  								<li><label><input type="checkbox" value="filter_ubisoft" data-filter_id="ubisoft"> Ubisoft</label></li>
+  								<li><label><input type="checkbox" value="filter_squareenix" data-filter_id="squareenix"> Square Enix</label></li>
+  								<li><label><input type="checkbox" value="filter_wb" data-filter_id="wb"> Warner Bros. IE</label></li>
+  								<li><label><input type="checkbox" value="filter_bioware" data-filter_id="bioware"> BioWare</label></li>
+  								<li><label><input type="checkbox" value="filter_sony" data-filter_id="sony"> Sony CE.</label></li>
+							</ul>
+						</div> 
+					</div>
+
+
+					<div class="category-filters">
+						<div id="year"><img src="images/close_round.png" id="yr_release" class="col"/><span style="font-size:18px"> Released</span></div>
+						<div id="year-filters">
+							<ul class="filter-options">
+  								<li><label><input type="checkbox" value="filter_2015" data-filter_id="2015"> 2015</label></li>
+  								<li><label><input type="checkbox" value="filter_2014" data-filter_id="2014"> 2014</label></li>
+  								<li><label><input type="checkbox" value="filter_2013" data-filter_id="2013"> 2013</label></li>
+  								<li><label><input type="checkbox" value="filter_2012" data-filter_id="2012"> 2012</label></li>
+  								<li><label><input type="checkbox" value="filter_2011" data-filter_id="2011"> 2011</label></li>
+  								<li><label><input type="checkbox" value="filter_2010" data-filter_id="2010"> 2010</label></li>
+  								<li><label><input type="checkbox" value="filter_2009" data-filter_id="2009"> 2009</label></li>
+  								<li><label><input type="checkbox" value="filter_2007" data-filter_id="2007"> 2007</label></li>
+							</ul>
+						</div> 
+					</div>
+
+
+					<div class="category-filters">
+						<div id="price"><img src="images/close_round.png" id="pricing" class="col"/><span style="font-size:18px"> Price</span></div>
+						<div id="price-filters">
+							<ul class="filter-options">
+  								<li><label><input type="checkbox" value="filter_1020" data-filter_id="1020"> 10$ - 20$</label></li>
+  								<li><label><input type="checkbox" value="filter_2030" data-filter_id="2030"> 20$ - 30$</label></li>
+  								<li><label><input type="checkbox" value="filter_3040" data-filter_id="3040"> 30$ - 40$</label></li>
+  								<li><label><input type="checkbox" value="filter_4050" data-filter_id="4050"> 40$ - 50$</label></li>
+  								<li><label><input type="checkbox" value="filter_5060" data-filter_id="5060"> 50$ - 60$</label></li>
+							</ul>
+						</div> 
+					</div>
+
+				</div>
+
+
+
+				<div class="gamesContent">
+					<ul id="game-list">								
+						<div class="game"><li><a class="filter_action filter_rpg filter_pc filter_ubisoft filter_4050 filter_2014"><img class="item" src="images/ac-unity.jpg"> <p>Assassin's Creed Unity</p><p>Price: 45$</p><span class="popupInfo"><img class="showpopup" data-showpopup="1" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_adventure filter_survival filter_pc filter_x360 filter_xone filter_ps3 filter_ps4 filter_3040 filter_4050 filter_2014"><img class="item" src="images/alien-list.jpg"><p>Alien: Isolation</p><p>Price: 40$</p><span class="popupInfo"><img class="showpopup" data-showpopup="2" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_rts filter_pc filter_4050 filter_5060 filter_2015"><img class="item" src="images/starcraft.jpg"><p>Starcraft: Legacy Of The Void</p><p>Price: 50$</p><span class="popupInfo"><img class="showpopup" data-showpopup="3"  src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_survival filter_adventure filter_pc filter_ps4 filter_ps3 filter_x360 filter_xone filter_4050 filter_2013 filter_squareenix"><img class="item" src="images/traider.jpg"><p>Tomb Raider</p><p>Price: 45$</p><span class="popupInfo"><img class="showpopup" data-showpopup="4" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_sports filter_ps3 filter_x360 filter_pc filter_2030 filter_3040 filter_2014"><img class="item" src="images/pes2014.png"><p>PES 2014</p><p>Price: 30$</p><span class="popupInfo"><img class="showpopup" data-showpopup="5" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_rpg filter_action filter_ubisoft filter_pc filter_xone filter_x360 filter_ps3 filter_ps4 filter_5060 filter_2014"><img class="item" src="images/watchdogs.jpg"><p>Watch Dogs</p><p>Price: 55$</p><span class="popupInfo"><img class="showpopup" data-showpopup="6" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_adventure filter_pc filter_x360 filter_ps3 filter_ubisoft filter_2030 filter_2010"><img class="item" src="images/sc-conviction.jpg"><p>SplinterCell:Conviction</p><p>Price: 25$</p><span class="popupInfo"><img class="showpopup" data-showpopup="7" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_pc filter_action filter_ps3 filter_x360 filter_2030 filter_squareenix filter_2012"><img class="item" src="images/hitman.jpeg"><p>Hitman Absolution</p><p>Price: 25$</p><span class="popupInfo"><img class="showpopup" data-showpopup="8" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_rpg filter_pc filter_ps3 filter_ps4 filter_x360 filter_xone filter_2014 filter_4050 filter_wb"><img class="item" src="images/mordor.jpg"><p>Middle-Earth: Shadow of Mordor</p><p>Price: $45</p><span class="popupInfo"><img class="showpopup" data-showpopup="9" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_adventure filter_pc filter_ps3 filter_x360 filter_2012 filter_2030"><img class="item" src="images/dishonored.jpg"><p>Dishonored</p><p>Price: $25</p><span class="popupInfo"><img class="showpopup" data-showpopup="10" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_rpg filter_action filter_pc filter_ps3 filter_x360 filter_2007 filter_1020 filter_bioware"><img class="item" src="images/me1.jpg"><p>Mass Effect</p><p>Price: $15</p><span class="popupInfo"><img class="showpopup" data-showpopup="11" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_pc filter_ps3 filter_ps4 filter_x360 filter_xone filter_2015 filter_4050 filter_wb"><img class="item" src="images/mortalkombatx.png"><p>Mortal Kombat X</p><p>Price: $45</p><span class="popupInfo"><img class="showpopup" data-showpopup="12" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_pc filter_x360 filter_ps4 filter_ps3 filter_2013 filter_3040 filter_4050 filter_wb"><img class="item" src="images/injustice.jpg"><p>Injustice: Gods Among Us</p><p>Price: $40</p><span class="popupInfo"><img class="showpopup" data-showpopup="13" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_x360 filter_ps3 filter_2011 filter_3040"><img class="item" src="images/mvc.jpg"><p>Marvel vs Capcom 3</p><p>Price: $35</p><span class="popupInfo"><img class="showpopup" data-showpopup="14" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_rpg filter_action filter_adventure filter_pc filter_x360 filter_ps3 filter_2011 filter_2030 filter_wb"><img class="item" src="images/batmanac.jpg"><p>Batman:Arkham City</p><p>Price: $25</p><span class="popupInfo"><img class="showpopup" data-showpopup="15" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_rpg filter_action filter_pc filter_ps3 filter_x360 filter filter_2009 filter_1020 filter_wb"><img class="item" src="images/arkhamknight.jpg"><p>Batman:Arkham Asylum</p><p>Price: $10</p><span class="popupInfo"><img class="showpopup" data-showpopup="16" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_ filter_action filter_ps4 filter_2015 filter_5060 filter_sony"><img class="item" src="images/order1886.jpg"><p>The Order 1886</p><p>Price: $55</p><span class="popupInfo"><img class="showpopup" data-showpopup="17" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_survival filter_ps4 filter_2015 filter_4050 filter_5060 filter_sony"><img class="item" src="images/untildawn.jpg"><p>Until Dawn</p><p>Price: $50</p><span class="popupInfo"><img class="showpopup" data-showpopup="18" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_fps filter_ps4 filter_ps3 filter_pc filter_x360 filter_xone filter_2015 filter_5060"><img class="item" src="images/bf-hardline.jpg"><p>Battlefield Hardline</p><p>Price: $55</p><span class="popupInfo"><img class="showpopup" data-showpopup="19" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_adventure filter_ps4 filter_2015 filter_5060 filter_sony"><img class="item" src="images/uncharted4.jpg"><p>Uncharted 4</p><p>Price: $58</p><span class="popupInfo"><img class="showpopup" data-showpopup="20" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_rpg filter_ps4 filter_xone filter_pc filter_2015 filter_5060 filter_wb"><img class="item" src="images/witcher3.jpg"><p>The Witcher: Wild Hunt</p><p>Price: $60</p><span class="popupInfo"><img class="showpopup" data-showpopup="21" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_adventure filter_x360 filter_ps3 filter_ps4 filter_xone filter_pc filter_2015 filter_5060"><img class="item" src="images/mgs5.jpg"><p>Metal Gear Solid 5: The Phantom Pain</p><p>Price: $59</p><span class="popupInfo"><img class="showpopup" data-showpopup="22" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_rpg filter_xone filter_pc filter_ps4 filter_2015 filter_5060"><img class="item" src="images/neverwinter.jpg"><p>Neverwinter</p><p>Price: $56</p><span class="popupInfo"><img class="showpopup" data-showpopup="23" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_fps filter_action filter_ps4 filter_xone filter_pc filter_ubisoft filter_2015 filter_5060"><img class="item" src="images/rainbow6.jpg"><p>Rainbow 6 Siege</p><p>Price: $60</p><span class="popupInfo"><img class="showpopup" data-showpopup="24" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_adventure filter_pc filter_ps4 filter_2015 filter_5060"><img class="item" src="images/nomanssky.jpg"><p>No Man's Sky</p><p>Price: $57</p><span class="popupInfo"><img class="showpopup" data-showpopup="25" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_rpg filter_ps4 filter_2015 filter_5060 filter_sony"><img class="item" src="images/bloodborne.jpg"><p>Bloodborne</p><p>Price: $59</p><span class="popupInfo"><img class="showpopup" data-showpopup="26" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_adventure filter_x360 filter_xone filter_pc filter_ps3 filter_ps4 filter_squareenix filter_2015 filter_5060"><img class="item" src="images/risetombraider.jpg"><p>Rise of the Tomb Raider</p><p>Price: $60</p><span class="popupInfo"><img class="showpopup" data-showpopup="27" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_rpg filter_fps filter_x360 filter_pc filter_ps3 filter_2011 filter_1020 filter_2030 filter_squareenix"><img class="item" src="images/deusexhr.jpg"><p>Deus Ex Human Revolution</p><p>Price: $20</p><span class="popupInfo"><img class="showpopup" data-showpopup="28" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_action filter_adventure filter_x360 filter_pc filter_ps3 filter_2013 filter_3040 filter_wb"><img class="item" src="images/arkhamorigins.jpg"><p>Batman: Arkham Origins</p><p>Price: $35</p><span class="popupInfo"><img class="showpopup" data-showpopup="29" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_rpg filter_xone filter_pc filter_ps4 filter_2015 filter_5060"><img class="item" src="images/elderscrollsonline.jpg"><p>The Elder Scrolls Online</p><p>Price: $55</p><span class="popupInfo"><img class="showpopup" data-showpopup="30" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_rpg filter_action filter_x360 filter_pc filter_ps3 filter_2010 filter_1020 filter_bioware"><img class="item" src="images/me2.jpg"><p>Mass Effect 2</p><p>Price: $16</p><span class="popupInfo"><img class="showpopup" data-showpopup="31" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_rpg filter_action filter_x360 filter_pc filter_ps3 filter_2012 filter_1020 filter_bioware"><img class="item" src="images/me3.jpg"><p>Mass Effect 3</p><p>Price: $19</p><span class="popupInfo"><img class="showpopup" data-showpopup="32" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+
+						<div class="game"><li><a class="filter_sports filter_x360 filter_xone filter_pc filter_ps4 filter_ps3 filter_2014 filter_3040 filter_4050"><img class="item" src="images/nba2k15.jpg"><p>NBA 2K15</p><p>Price: $40</p><span class="popupInfo"><img class="showpopup" data-showpopup="33" src="images/info.jpg" onmouseover="swap(this)" onmouseout="swapback(this)" /></span></a></li></div>
+					</ul>
+				</div>
+			</div>
+			
+
+			<div class="overlay-bg">
+			</div>		
+
+			 
+			<div class="popupContainer popup1">
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Assassin's Creed Unity</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/acreed-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">45$</h3>
+					</div>
+
+					<div class="buy" data-buy="1">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Assassin's Creed Unity is the next-gen evolution of the blockbuster franchise powered by an all-new game engine. From the storming of the Bastille to the execution of King Louis XVI, experience the French Revolution as never before, and help the people of France carve an entirely new destiny. </p>
+					</div>
+	
+				</div>
+			</div>
+			
+			
+			<div class="popupContainer popup2">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Alien Isolation</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+	
+					<div class="popupLeftContent">
+						<img src="images/alien-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">40$</h3>
+					</div>
+
+					<div class="buy" data-buy="2">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Alien: Isolation is a first-person survival horror stealth game developed by The Creative Assembly and published by Sega on 7 October 2014 for Microsoft Windows, PlayStation 3, PlayStation 4, Xbox 360 and Xbox One.</p>
+					</div>
+				</div>
+			</div> 
+			
+			
+			<div class="popupContainer popup3">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Starcraft: Legacy of the Void</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/starcraft-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">50$</h3>
+					</div>
+					
+					<div class="buy" data-buy="3">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>StarCraft II: Legacy of the Void is a planned stand alone expansion pack to the military science-fiction real-time strategy game StarCraft II: Wings of Liberty, and the third part of the StarCraft II trilogy developed by Blizzard Entertainment.</p>
+					</div>
+	
+				</div>
+			</div> 
+			
+			<div class="popupContainer popup4">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Tomb Raider</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/traider-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">45$</h3>
+					</div>
+
+					<div class="buy" data-buy="4">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Tomb Raider is a 2013 action-adventure video game published by Square Enix. Tomb Raider is the fourth title developed by Crystal Dynamics in the Tomb Raider franchise. As the first entry in a new Tomb Raider continuity, the game is a reboot that emphasises the reconstructed origins of the culturally influential lead character Lara Croft. </p>
+					</div>
+	
+				</div>
+			</div> 
+			
+			<div class="popupContainer popup5">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Pro Evolution Soccer 2014</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/pes2014-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">30$</h3>
+					</div>
+
+					<div class="buy" data-buy="5">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Pro Evolution Soccer 2014, officially abbreviated to PES 2014, also known in Japan and South Korea as World Soccer: Winning Eleven 2014 is an association football video game developed and published by Konami.</p>
+					</div>
+	
+				</div>
+			</div> 
+			
+			<div class="popupContainer popup6">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Watch Dogs</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/watchdogs-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">55$</h3>
+					</div>
+
+					<div class="buy" data-buy="6">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>In the backstory of Watch Dogs, a computer hacker is discovered to have been behind the Northeast blackout of 2003, which led to eleven deaths. This event prompted the Blume Corporation to develop ctOS (CenTral Operating System). The ctOS supercomputer connects to everyone and everything—including personal information, security cameras, &amp traffic lights.</p>
+					</div>
+				</div>
+			</div> 
+			
+			<div class="popupContainer popup7">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Splinter Cell: Conviction</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/sc-conviction-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">25$</h3>
+					</div>
+
+					<div class="buy" data-buy="7">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Tom Clancy's Splinter Cell: Conviction is a 2010 action-adventure stealth video game, developed by Ubisoft Montreal as part of the Tom Clancy's Splinter Cell series. Key members of the Tom Clancy's Rainbow Six: Vegas team, such as creative director Maxime Béland worked on the game.</p>
+					</div>
+				</div>
+			</div> 
+			
+			<div class="popupContainer popup8">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Hitman Absolution</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/hitman-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">25$</h3>
+					</div>
+
+					<div class="buy" data-buy="8">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Hitman: Absolution is a stealth video game developed by IO Interactive and published by Square Enix. It is the fifth installment in the Hitman game series, and runs on IO Interactive 's proprietary Glacier 2 game engine.</p>
+					</div>
+				</div>
+			</div> 
+			
+			<div class="popupContainer popup9">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Middle-Earth: Shadow of Mordor</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/mordor-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">45$</h3>
+					</div>
+
+					<div class="buy" data-buy="9">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Middle-earth: Shadow of Mordor is an action role-playing video game set within Tolkien's legendarium, developed by Monolith Productions and released by Warner Bros. Interactive Entertainment.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="popupContainer popup10">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Dishonored</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/dishonored-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">25$</h3>
+					</div>
+
+					<div class="buy" data-buy="10">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Dishonored is a 2012 stealth action-adventure video game developed by Arkane Studios and published by Bethesda Softworks. It was released worldwide in October 2012 for Microsoft Windows, PlayStation 3, and Xbox 360</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="popupContainer popup11">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Mass Effect</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/me1-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">15$</h3>
+					</div>
+
+					<div class="buy" data-buy="11">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Mass Effect is a science fiction action role-playing third person shooter video game series developed by the Canadian company BioWare. The trilogy largely revolves around a soldier by the name of Commander Shepard, whose mission is to save the galaxy from a race of powerful mechanical beings known as the Reapers and their agents, including the first game's antagonist Saren Arterius.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="popupContainer popup12">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Mortal Kombat X</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/mortalkombatx-popupimage.png">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">45$</h3>
+					</div>
+
+					<div class="buy" data-buy="12">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Mortal Kombat X is an upcoming 2015 fighting video game currently in development by NetherRealm Studios. It is the tenth main title in the Mortal Kombat series, with a release scheduled for April 14, 2015.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="popupContainer popup13">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Injustice: Gods Among Us</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/injustice-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">40$</h3>
+					</div>
+
+					<div class="buy" data-buy="13">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Injustice: Gods Among Us is a fighting video game based upon the fictional universe of DC Comics. The game was developed by NetherRealm Studios and published by Warner Bros. Interactive Entertainment for the PlayStation 3, Wii U, and Xbox 360.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="popupContainer popup14">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Marvel vs Capcom 3</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/mvc3-popupimage.png">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">35$</h3>
+					</div>
+
+					<div class="buy" data-buy="14">
+						<h3>Buy Now</h3>
+					</div>
+										
+					<div class="popupRightContent">
+						<p>Marvel vs. Capcom 3: Fate of Two Worlds is a crossover fighting game developed by Capcom. Featuring Capcom's own characters and characters from American comic book company Marvel Comics, it is the fifth installment of the Marvel vs. Capcom franchise, the eighth installment in the Vs. series, and the second in the Vs. series to use three-dimensional graphics on a two-dimensional battle area.</p>
+					</div>
+				</div>
+			</div>
+			
+			<div class="popupContainer popup15">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Batman: Arkham City</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/batmanac-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">25$</h3>
+					</div>
+
+					<div class="buy" data-buy="15">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Batman: Arkham City is a 2011 action-adventure video game developed by Rocksteady Studios and released by Warner Bros. Interactive Entertainment.  Based on the DC Comics superhero Batman, it is the sequel to the 2009 video game Batman: Arkham Asylum and the second installment in the Batman: Arkham series.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="popupContainer popup16">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Batman: Arkham Asylum</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/batmanaa-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">10$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Written by veteran Batman writer Paul Dini, Arkham Asylum is based on the long-running comic book mythos. The Joker, instigates an elaborate plot to seize control of Arkham Asylum and threatening to detonate hidden bombs around fictional Gotham City, Batman is forced to fight his way through the asylum's inmates and put an end to the Joker's plans.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="popupContainer popup17">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">The Order 1886</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/order1886-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">55$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>In an alternate history London, where an old order of knights keep all of the world safe from half breed monsters, a combination of animal and man. Around the seventh or eighth centuries a small number of humans took on bestial traits, where humans feared these half-breeds and war broke out. Despite the humans outnumbering the half-breeds, their animal strength gave them the advantage in centuries of conflict.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup18">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Until Dawn</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/untildawn-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">50$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>A group of teenagers spend the night in a log cabin on the anniversary of the death of one of their friends, unaware that they are being hunted by a crazed serial killer.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="popupContainer popup19">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Battlefield Hardline</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/bf-hardline-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">55$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Los Angeles is embroiled in a drug war and officer Nick Mendoza (Nicholas Gonzalez) has just made detective. Alongside his partner, veteran detective Khai Minh Dao (Kelly Hu)[citation needed], he follows the drug supply chain from the streets to the source. In a series of increasingly off-the-books cases the two detectives come to realize that power and corruption can affect both sides of the law.</p>
+					</div>
+				</div>
+			</div>
+
+			<div class="popupContainer popup20">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Uncharted 4</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/uncharted4-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">58$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Set three years after the events of Uncharted 3: Drake's Deception, Nathan Drake, now retired as a fortune hunter, has settled into a normal life. His world is turned upside-down when his older brother Sam, long believed dead, suddenly appears seeking Drake's help.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup21">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">The Witcher: Wild Hunt</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/witcher3-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">60$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>The Witcher 3: Wild Hunt concludes the story of the witcher Geralt of Rivia, the series' protagonist, whose story to date has been covered in the previous versions.[13] Continuing from The Witcher 2, the ones who sought to use Geralt are now gone. Geralt seeks to embark on a new and personal mission, whilst the world order itself is coming to a change.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup22">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Metal Gear Solid V: The Phantom Pain</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/mgs5-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">59$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>In the aftermath of the events of Ground Zeroes and the destruction of Militaires Sans Frontières, Snake falls into a coma.[29] Nine years later, he awakes and helps lead a new mercenary group, the Diamond Dogs. Now under the guise of the codename "Venom Snake", he ventures into Afghanistan during the Soviet war to track down the men responsible for MSF's destruction.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup23">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Neverwinter</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/neverwinter-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">56$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Briefly assuming her pre-lich appearance, the Lich Queen Valindra attacks the soldiers of New Neverwinter, as new grounds are being built outside of the original city, which is being repaired. Valindra's actions spark the Battle of the Bridge, in which Barrabus the Gray (formerly known as Artemis Entreri) and Drizzt Do'Urden are rumored to be present by gossipers at a pub in the shattered town of Luskan.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup24">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Rainbow Six Siege</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/rainbow6-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">60$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Tom Clancy's Rainbow Six Siege is the upcoming installment of the acclaimed franchise developed by the renowned Ubisoft Montreal studio. Inspired by the reality of counter terrorist operatives across the world, Rainbow Six Siege invites players to master the art of destruction. Intense close quarters confrontations, high lethality, tactics, team play and explosive action are the center of the experience.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup25">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">No Man's Sky</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/nomanssky-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">57$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>No Man's Sky is a procedurally generated open universe game. Players take the role of a planetary explorer with a spacecraft, allowing them to explore the surface of numerous planets and interact with the flora and fauna, and take to space, engaging in combat with hostile forces and travel to other planets.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup26">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Bloodborne</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/bloodborne-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">59$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>The game takes place in the gothic, ruined city of Yharnam which is rumored to house a potent medical remedy. Over the years, many travelers make pilgrimages to the city seeking the remedy to cure their afflictions; the player takes the role as one of these travelers. Upon arriving in the city, however, it is discovered that the city is plagued with an endemic illness that has malformed most of its denizens into bestial creatures.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup27">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Rise of the Tomb Raider</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/risetombraider-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">60$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Set in Siberia, the game follows Lara Croft and Jonah Maiava as they discover an ancient city built by the Grand Prince of Vladimir in the 13th century.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup28">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Deus Ex: Human Revolution</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/deusexhr-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">20$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Set during the year 2027, nanotechnological augmentations have yet to be developed, and biomechanical augmentations are the current state of the art. Adam Jensen, is a private security officer with Sarif Industries, a leading biotech company that specializes in human augmentations. After an attack on his company leaves him horrifically injured and forced to undergo augmentation to survive.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup29">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Batman: Arkham Origins</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/arkhamorigins-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">35$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>The events in Arkham Origins take place about five years before Batman: Arkham Asylum, in midwinter Gotham City.Batman, an experienced crime-fighter in the second year of his career, is not yet the veteran superhero of Arkham Asylum and Arkham City. He is a mysterious force; even the police do not know whether he is a vigilante, a myth or a supernatural being.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup30">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">The Elder Scrolls Online</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/elderscrollsonline-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">55$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>The game is set in the continent of Tamriel and features a storyline indirectly connected with the other games. The game is set a millennium before the events of The Elder Scrolls V: Skyrim and around 800 years before The Elder Scrolls III: Morrowind and The Elder Scrolls IV: Oblivion, with the Daedric Prince Molag Bal appearing as the main antagonist as he attempts to meld the plane of Mundus with his realm of Coldharbour.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup31">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Mass Effect 2</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/me2-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">16$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Set in the 22nd century where interstellar travel is possible through the use of mass transit devices called Mass Relays, a technology claimed to have been built by an extinct alien race - the Protheans. During the events of the first game, a geth army attempted to open a portal for a highly advanced machine race of synthetic-organic starships known as the Reapers, which many believe are the destroyers of organic civilizations.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup32">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">Mass Effect 3</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/me3-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">19$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>Mass Effect 3 begins on Earth with Commander Shepard having been detained for working with Cerberus or following the events in Arrival. In the opening moments it is revealed that Earth has recently lost contact with its extra-solar assets and is hastily preparing for the imminent Reaper arrival. The assault comes moments later, and all of Earth's defenses are overwhelmed.</p>
+					</div>
+				</div>
+			</div>
+
+
+			<div class="popupContainer popup33">        
+				<div class="popupContent">
+				
+					<div class="popupContentTitle">
+						<h2 class="gametitle">NBA 2K15</h2>
+					</div>
+					
+					<div class="popupCloseBtn">
+						<strong>Close</strong>
+					</div>
+				
+					<div class="popupLeftContent">
+						<img src="images/nba2k15-popupimage.jpg">
+					</div>
+					
+					<div class="popupPrice">
+						<h2 class="labelprice">Price: </h2>
+						<h3 class="gameprice">40$</h3>
+					</div>
+
+					<div class="buy" data-buy="16">
+						<h3>Buy Now</h3>
+					</div>
+
+					<div class="popupRightContent">
+						<p>NBA 2K15 is a basketball simulation video game developed by Visual Concepts and published by 2K Sports. It is the sixteenth installment of the NBA 2K franchise.</p>
+					</div>
+				</div>
+			</div>
+
+
+			
+			
+			<div id="footer">
+				<div class="footer-container">
+					<div class="footer-list">
+						<ul class="fmenu">
+							<li><h1>GameHaven</h1></li>
+							<li><a href="">Games</a></li>
+							<li><a href="">Coming Soon</a></li>
+							<li><a href="mailto:gamehaven@gmail.com">gamehaven@gmail.com</a></li>
+						</ul>
+						
+						<ul class="friends">
+							<li><h1>Our Friends</h1></li>
+							<li><a href="http://www.gamespot.com/">Gamespot</a></li>
+							<li><a href="http://www.ign.com/">IGN</a></li>
+							<li><a href="http://www.eurogamer.net/">EuroGamer</a></li>
+						</ul>
+					</div>
+					
+					<div class="subscribe">
+					<form action="#" method="post">
+						<label for="email" id="label">Enter your email address for news & updates</label>
+						<input type="email" id="email" name="email"/>
+						<input type="submit" id="submit" value="Sign Up"/>
+					</form>
+					</div>
+					
+					<div class="social">
+						<img src="images/facebook.png">
+						<img src="images/twitter.png">
+						<img src="images/youtube.png">
+						<img src="images/google+.png">
+					</div>
+				</div>
+				
+				<div id="copyright"> <a href="index.html">&copy; 2015 GameHaven.com</a></div>
+			</div>
+
+			<a href="#" id="scrollToTop">Back to top</a> 
+			
+		</div> 
+
+        <script type="text/javascript" rel="javascript" src="script.js"></script>  
+    </body>
+</html>
